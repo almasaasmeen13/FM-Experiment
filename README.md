@@ -64,18 +64,47 @@ MODEL GRAPH:
 <img width="512" height="365" alt="image" src="https://github.com/user-attachments/assets/acd787bd-5281-4f1b-802f-1aa39fac9189" />
 
 
-Program
+Program :
+~~~
+Ac=20.8;
+fc=4300;
+Am=10.4;
+fm=430;
+fs=50000;
+t=0:1/fs:2/fm;
+beta=3.6;
+Em=Am*cos(2*3.14*fm*t);
+subplot(3,1,1);
+plot(t,Em);
+xlabel("Time(s)");
+ylabel("Amplitude");
+title("Message Signal m(t)");
+Ec=Ac*cos(2*3.14*fc*t);
+subplot(3,1,2);
+plot(t,Ec);
+xlabel("Time(s)");
+ylabel("Amplitude");
+title("Carrier Signal c(t)");
+Efm=Ac*cos(2*3.14*fc*t+beta*sin(2*3.14*fm*t));
+subplot(3,1,3);
+plot(t,Efm);
+xlabel("Time(s)");
+ylabel("Amplitude");
+title("FM Modulated Signal (USB)");
+
+~~~
 
 
-Output Waveform
+Output Waveform :
+<img width="1777" height="971" alt="Screenshot 2025-10-12 201229" src="https://github.com/user-attachments/assets/6e6bbc46-7ad9-45df-8029-c82c164cfdbf" />
 
 
+Tabulation :
+![WhatsApp Image 2025-11-12 at 15 19 42_db8f2583](https://github.com/user-attachments/assets/e0345b35-5bd7-4693-b6fd-f030fe8275ff)
 
-Tabulation
 
-
-
-Calculation
+Calculation :
+![WhatsApp Image 2025-11-12 at 15 19 43_b1c7cb8e](https://github.com/user-attachments/assets/0eb3e007-a72d-438c-9798-64c938e58cfd)
 
 
 
