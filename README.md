@@ -117,7 +117,6 @@ Modulation Index Theoretical	=
 
 
 RESULT:
-
-Thus, the frequency modulation and demodulation is successfully done and the output is experimentally verified.
+![WhatsApp Image 2025-11-24 at 20 01 31_50170f69](https://github.com/user-attachments/assets/d5554dce-0308-4c60-8b84-45b4a2829778)
 
 
